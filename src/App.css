@@ -1,0 +1,89 @@
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee1d1;
+  font-family: Arial, sans-serif;
+}
+
+.game-card {
+  background: white;
+  padding: 2rem;
+  border: 1px solid #222;
+  text-align: center;
+  width: 320px;
+}
+
+.subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.guess-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.letter-cell {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.empty {
+  background: white;
+}
+
+.correct {
+  background: #7bb662;
+}
+
+.present {
+  background: #e5c04b;
+}
+
+.absent {
+  background: #d96b6b;
+}
+
+.guess-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+input {
+  width: 120px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.message {
+  font-weight: bold;
+}
+
+.reset-button {
+  margin-top: 0.75rem;
+}
